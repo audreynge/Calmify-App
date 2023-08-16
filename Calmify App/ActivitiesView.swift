@@ -12,33 +12,31 @@ struct ActivitiesView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 Image("Choose your activity")
-                    .position(x: UIScreen.main.bounds.width * 0.35, y: UIScreen.main.bounds.height * 0.18)
+                    .position(x: UIScreen.main.bounds.width * 0.33, y: UIScreen.main.bounds.height * 0.175)
                 
+            VStack{
                 NavigationLink(destination:BreathingView()){
                     Image("breathingexercisescloud")
-                        .padding(EdgeInsets(top: 8, leading: 20, bottom: 8, trailing: 20))
-                        .position(x: UIScreen.main.bounds.width * 0.27, y: UIScreen.main.bounds.height * 0.38)
                 }
-                    
+                .position(x: UIScreen.main.bounds.width * 0.27, y: UIScreen.main.bounds.height * 0.37)
+                
                 NavigationLink(destination:StressTipsView()){
                     Image("stresstipscloud")
-                        .padding(EdgeInsets(top: 8, leading: 20, bottom: 8, trailing: 20))
-                        .position(x: UIScreen.main.bounds.width * 0.65, y: UIScreen.main.bounds.height * 0.52)
                 }
+                .position(x: UIScreen.main.bounds.width * 0.65, y: UIScreen.main.bounds.height * 0.25)
                 
                 NavigationLink(destination:QuotesView()){
                     Image("quotescloud")
 
-                        .padding(EdgeInsets(top: 8, leading: 20, bottom: 8, trailing: 20))
-                        .position(x: UIScreen.main.bounds.width * 0.3, y: UIScreen.main.bounds.height * 0.69)
-  
                 }
+                .position(x: UIScreen.main.bounds.width * 0.3, y: UIScreen.main.bounds.height * 0.18)
                 
                 NavigationLink(destination:MentalHealthInfoView()){
                     Image("mentalhealthinfocloud")
-                        .padding(EdgeInsets(top: 8, leading: 20, bottom: 8, trailing: 20))
-                        .position(x: UIScreen.main.bounds.width * 0.7, y: UIScreen.main.bounds.height * 0.84)
-  
+                        
+                    
+                }
+                .position(x: UIScreen.main.bounds.width * 0.7, y: UIScreen.main.bounds.height * 0.08)
                 }
                 
             }

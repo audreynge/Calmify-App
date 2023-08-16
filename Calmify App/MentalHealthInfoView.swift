@@ -9,7 +9,14 @@ import SwiftUI
 
 struct MentalHealthInfoView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            Image("bluebg")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+                .clipped()
+                .edgesIgnoringSafeArea(.all)
+        }
     }
 }
 
