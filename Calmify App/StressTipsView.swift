@@ -16,7 +16,7 @@ struct StressTipsView: View {
       
         //Tired
         Button() {
-          let tiredTipsArray = ["Eat a snack!", "Get moving! Regular exercise will make you feel less tired.", "Sleep well; avoid taking naps in the day", "Drink more water. Sometimes you feel tired simply because you're mildly dehydrated."]
+          let tiredTipsArray = ["Eat a snack!", "Get moving! Regular exercise will make you feel less tired.", "Sleep well; avoid taking naps in the day", "Drink more water. Sometimes you feel tired simply because you're dehydrated."]
           let randomtiredTips = Int.random(in: 0..<tiredTipsArray.count)
           tips = tiredTipsArray[randomtiredTips]
           print(tiredTipsArray[randomtiredTips])
@@ -35,7 +35,10 @@ struct StressTipsView: View {
 
           //Tense
           Button() {
-              _ = ["Watch something funny", "Drink green tea, it can make you relax","Organise your space, mess can really start to clutter up your mind","Light some candles, candlelight is known for its calming effects "]
+              let tenseTipsArray = ["Watch something funny", "Drink green tea, it can make you relax","Organize your space,mess can start to clutter up your mind","Light some candles, candlelight is known for its calming effects "]
+              let randomtenseTips = Int.random(in: 0..<tenseTipsArray.count)
+              tips = tenseTipsArray[randomtenseTips]
+              print(tenseTipsArray[randomtenseTips])
           }
           label: {
               Image("N2")
@@ -51,6 +54,10 @@ struct StressTipsView: View {
         
         //anxious
           Button() {
+              let anxiousTipsArray = ["Overcome your negative thoughts, replace negative thoughts with solutions", "Reach out to someone you trust, isolating yourself will make it worst", "Practice relaxation techniques like yoga", "If the anxiety is too intense, seek professional help like therapy"]
+              let randomanxiousTips = Int.random(in: 0..<anxiousTipsArray.count)
+              tips = anxiousTipsArray[randomanxiousTips]
+              print(anxiousTipsArray[randomanxiousTips])
           }
           label: {
               Image("N3")
@@ -66,7 +73,10 @@ struct StressTipsView: View {
         
         //nervous
             Button() {
-              _ = ["Close your eyes and count to 10 slowly", "Pop on your headphones and listen to some calming music","If you have time, do some meditation", "If you are nervous about future events, write down your thoughts and how can you prepare yourself for it"]
+              let nervousTipsArray = ["Close your eyes and count to 10 slowly", "Pop on your headphones and listen to some calming music","If you have time, do some meditation", "If you are nervous about future events, write down your thoughts and how to prepare yourself"]
+                let randomnervousTips = Int.random(in: 0..<nervousTipsArray.count)
+                tips = nervousTipsArray[randomnervousTips]
+                print(nervousTipsArray[randomnervousTips])
             }
           label: {
               Image("N4")
@@ -82,6 +92,10 @@ struct StressTipsView: View {
         
         
             Button() {
+                let overwhelmedTipsArray = ["Take a break to unwind yourself, do activities you enjoy!", "Focus on what you can solve. It's easy to worry more about things you can't control", "Use our breathing exercise to reduce your stress", "Avoid distractions, focus on your tasks and be productive"]
+                let randomoverwhelmedTips = Int.random(in: 0..<overwhelmedTipsArray.count)
+                tips = overwhelmedTipsArray[randomoverwhelmedTips]
+                print(overwhelmedTipsArray[randomoverwhelmedTips])
             }
             label: {
                 Image("N5")
