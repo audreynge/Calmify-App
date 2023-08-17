@@ -15,7 +15,7 @@ struct ActivitiesView: View {
                     .position(x: UIScreen.main.bounds.width * 0.33, y: UIScreen.main.bounds.height * 0.175)
                 
             VStack{
-                NavigationLink(destination:BreathingView()){
+                NavigationLink(destination:BreathingHome()){
                     Image("breathingexercisescloud")
                 }
                 .position(x: UIScreen.main.bounds.width * 0.27, y: UIScreen.main.bounds.height * 0.37)
@@ -41,6 +41,7 @@ struct ActivitiesView: View {
                 
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 

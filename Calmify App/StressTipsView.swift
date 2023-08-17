@@ -32,7 +32,7 @@ struct StressTipsView: View {
           .frame(width: 330,height:70)
           .position(x: UIScreen.main.bounds.width * 0.5, y: UIScreen.main.bounds.height * 0.425)
           
-
+          
           //Tense
           Button() {
               let tenseTipsArray = ["Watch something funny", "Drink green tea, it can make you relax","Organize your space,mess can start to clutter up your mind","Light some candles, candlelight is known for its calming effects "]

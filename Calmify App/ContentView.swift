@@ -19,9 +19,8 @@ struct ContentView: View {
                     Image("relaxtext")
                         .position(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height * 0.817)
                 }
-                
+
             }
-            .navigationBarHidden(true)
         }
     }
 }

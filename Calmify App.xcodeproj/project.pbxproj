@@ -12,9 +12,10 @@
 		054635E42A8B4B0900FF804F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 054635E32A8B4B0900FF804F /* Assets.xcassets */; };
 		054635E72A8B4B0900FF804F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 054635E62A8B4B0900FF804F /* Preview Assets.xcassets */; };
 		054635F02A8B4F1F00FF804F /* ActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054635EF2A8B4F1F00FF804F /* ActivitiesView.swift */; };
+		0562E0572A8E6DC80031B3C0 /* BreatheType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0562E0562A8E6DC80031B3C0 /* BreatheType.swift */; };
+		0562E0592A8E6FDD0031B3C0 /* BreathingHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0562E0582A8E6FDD0031B3C0 /* BreathingHome.swift */; };
 		05E68A542A8BF531007A10F5 /* QuotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E68A532A8BF531007A10F5 /* QuotesView.swift */; };
 		05E68A562A8BF540007A10F5 /* StressTipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E68A552A8BF540007A10F5 /* StressTipsView.swift */; };
-		05E68A582A8BF54B007A10F5 /* BreathingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E68A572A8BF54B007A10F5 /* BreathingView.swift */; };
 		05E68A5A2A8BF580007A10F5 /* MentalHealthInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E68A592A8BF580007A10F5 /* MentalHealthInfoView.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,9 +26,10 @@
 		054635E32A8B4B0900FF804F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		054635E62A8B4B0900FF804F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		054635EF2A8B4F1F00FF804F /* ActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesView.swift; sourceTree = "<group>"; };
+		0562E0562A8E6DC80031B3C0 /* BreatheType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreatheType.swift; sourceTree = "<group>"; };
+		0562E0582A8E6FDD0031B3C0 /* BreathingHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingHome.swift; sourceTree = "<group>"; };
 		05E68A532A8BF531007A10F5 /* QuotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesView.swift; sourceTree = "<group>"; };
 		05E68A552A8BF540007A10F5 /* StressTipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressTipsView.swift; sourceTree = "<group>"; };
-		05E68A572A8BF54B007A10F5 /* BreathingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingView.swift; sourceTree = "<group>"; };
 		05E68A592A8BF580007A10F5 /* MentalHealthInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealthInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,13 +63,14 @@
 		054635DE2A8B4B0800FF804F /* Calmify App */ = {
 			isa = PBXGroup;
 			children = (
+				0562E0552A8E6D9A0031B3C0 /* Model */,
+				0562E0542A8E6D7A0031B3C0 /* View */,
 				054635DF2A8B4B0800FF804F /* Calmify_AppApp.swift */,
 				054635E12A8B4B0800FF804F /* ContentView.swift */,
 				054635EF2A8B4F1F00FF804F /* ActivitiesView.swift */,
 				05E68A592A8BF580007A10F5 /* MentalHealthInfoView.swift */,
 				05E68A532A8BF531007A10F5 /* QuotesView.swift */,
 				05E68A552A8BF540007A10F5 /* StressTipsView.swift */,
-				05E68A572A8BF54B007A10F5 /* BreathingView.swift */,
 				054635E32A8B4B0900FF804F /* Assets.xcassets */,
 				054635E52A8B4B0900FF804F /* Preview Content */,
 			);
@@ -80,6 +83,22 @@
 				054635E62A8B4B0900FF804F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0562E0542A8E6D7A0031B3C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0562E0582A8E6FDD0031B3C0 /* BreathingHome.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0562E0552A8E6D9A0031B3C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0562E0562A8E6DC80031B3C0 /* BreatheType.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,12 +172,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				054635F02A8B4F1F00FF804F /* ActivitiesView.swift in Sources */,
+				0562E0592A8E6FDD0031B3C0 /* BreathingHome.swift in Sources */,
+				0562E0572A8E6DC80031B3C0 /* BreatheType.swift in Sources */,
 				054635E22A8B4B0800FF804F /* ContentView.swift in Sources */,
 				05E68A562A8BF540007A10F5 /* StressTipsView.swift in Sources */,
 				054635E02A8B4B0800FF804F /* Calmify_AppApp.swift in Sources */,
 				05E68A5A2A8BF580007A10F5 /* MentalHealthInfoView.swift in Sources */,
 				05E68A542A8BF531007A10F5 /* QuotesView.swift in Sources */,
-				05E68A582A8BF54B007A10F5 /* BreathingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
