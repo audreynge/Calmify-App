@@ -35,7 +35,7 @@ struct StressTipsView: View {
           
           //Tense
           Button() {
-              let tenseTipsArray = ["Watch something funny", "Drink green tea, it can make you relax","Organize your space,mess can start to clutter up your mind","Light some candles, candlelight is known for its calming effects "]
+              let tenseTipsArray = ["Watch something funny", "Drink green tea, it can make you relax","Organize your space; mess can start to clutter up your mind","Light some candles, candlelight is known for its calming effects "]
               let randomtenseTips = Int.random(in: 0..<tenseTipsArray.count)
               tips = tenseTipsArray[randomtenseTips]
               print(tenseTipsArray[randomtenseTips])
