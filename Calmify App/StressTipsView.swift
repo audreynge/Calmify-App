@@ -10,9 +10,9 @@ struct StressTipsView: View {
       .clipped()
       .edgesIgnoringSafeArea(.all)
       Image("Stress Management Tips")
-        .position(x: UIScreen.main.bounds.width * 0.43, y: UIScreen.main.bounds.height * 0.16)
+        .position(x: UIScreen.main.bounds.width * 0.43, y: UIScreen.main.bounds.height * 0.175)
       Image("1-5 Scale Question")
-        .position(x : 190, y : 290)
+        .position(x : 190, y : 275)
       
         //Tired
         Button() {
@@ -30,7 +30,7 @@ struct StressTipsView: View {
                   .position(x : -33, y :34)
           }
           .frame(width: 330,height:70)
-          .position(x: UIScreen.main.bounds.width * 0.5, y: UIScreen.main.bounds.height * 0.475)
+          .position(x: UIScreen.main.bounds.width * 0.5, y: UIScreen.main.bounds.height * 0.425)
           
 
           //Tense
@@ -49,12 +49,12 @@ struct StressTipsView: View {
                 .position(x : -28, y :34)
            }
           .frame(width: 330,height:70)
-          .position(x: UIScreen.main.bounds.width * 0.5, y: UIScreen.main.bounds.height * 0.56)
+          .position(x: UIScreen.main.bounds.width * 0.5, y: UIScreen.main.bounds.height * 0.505)
           
         
         //anxious
           Button() {
-              let anxiousTipsArray = ["Overcome your negative thoughts, replace negative thoughts with solutions", "Reach out to someone you trust, isolating yourself will make it worst", "Practice relaxation techniques like yoga", "If the anxiety is too intense, seek professional help like therapy"]
+              let anxiousTipsArray = ["Overcome your negative thoughts by replacing negative thoughts with happy ones", "Reach out to someone you trust", "Practice relaxation techniques like yoga", "If your anxiety is too intense, seek professional help like therapy"]
               let randomanxiousTips = Int.random(in: 0..<anxiousTipsArray.count)
               tips = anxiousTipsArray[randomanxiousTips]
               print(anxiousTipsArray[randomanxiousTips])
@@ -68,12 +68,12 @@ struct StressTipsView: View {
                 .position(x : -16, y : 35)
            }
           .frame(width: 330,height:70)
-          .position(x: UIScreen.main.bounds.width * 0.5, y: UIScreen.main.bounds.height * 0.645)
+          .position(x: UIScreen.main.bounds.width * 0.5, y: UIScreen.main.bounds.height * 0.59)
           
         
         //nervous
             Button() {
-              let nervousTipsArray = ["Close your eyes and count to 10 slowly", "Pop on your headphones and listen to some calming music","If you have time, do some meditation", "If you are nervous about future events, write down your thoughts and how to prepare yourself"]
+              let nervousTipsArray = ["Close your eyes and count to 10 slowly", "Put on headphones and listen to calming music","If you have time, do some meditation", "If you are nervous about future events, write down those thoughts and ways to prepare yourself"]
                 let randomnervousTips = Int.random(in: 0..<nervousTipsArray.count)
                 tips = nervousTipsArray[randomnervousTips]
                 print(nervousTipsArray[randomnervousTips])
@@ -87,12 +87,12 @@ struct StressTipsView: View {
                 .position(x : -16, y :33)
            }
           .frame(width: 330,height:70)
-          .position(x: UIScreen.main.bounds.width * 0.5, y: UIScreen.main.bounds.height * 0.73)
+          .position(x: UIScreen.main.bounds.width * 0.5, y: UIScreen.main.bounds.height * 0.683)
           
         
         
             Button() {
-                let overwhelmedTipsArray = ["Take a break to unwind yourself, do activities you enjoy!", "Focus on what you can solve. It's easy to worry more about things you can't control", "Use our breathing exercise to reduce your stress", "Avoid distractions, focus on your tasks and be productive"]
+                let overwhelmedTipsArray = ["Take a break to unwind yourself; do activities you enjoy!", "Focus on what you can solve. It's easy to worry more about things you can't control", "Use our breathing exercise to reduce your stress", "Avoid distractions, focus on your tasks and be productive"]
                 let randomoverwhelmedTips = Int.random(in: 0..<overwhelmedTipsArray.count)
                 tips = overwhelmedTipsArray[randomoverwhelmedTips]
                 print(overwhelmedTipsArray[randomoverwhelmedTips])
@@ -106,7 +106,7 @@ struct StressTipsView: View {
                     .position(x : 13, y :38)
                }
             .frame(width: 330,height:70)
-            .position(x: UIScreen.main.bounds.width * 0.5, y: UIScreen.main.bounds.height * 0.809)
+            .position(x: UIScreen.main.bounds.width * 0.5, y: UIScreen.main.bounds.height * 0.765)
         
                 
         Text("\(tips)")
@@ -114,7 +114,7 @@ struct StressTipsView: View {
             .font(.custom("Heiti TC", size: 20))
             .foregroundColor(Color("lightblue"))
             .frame(width: 330,height:100)
-            .position(x: UIScreen.main.bounds.width * 0.5, y: UIScreen.main.bounds.height * 0.9)
+            .position(x: UIScreen.main.bounds.width * 0.5, y: UIScreen.main.bounds.height * 0.88)
     }
   }
 }
