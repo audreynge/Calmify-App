@@ -1,10 +1,3 @@
-//
-//  BreathingView.swift
-//  Calmify App
-//
-//  Created by Audrey Ng on 8/15/23.
-//
-
 import SwiftUI
 
 struct BreathingView: View {
